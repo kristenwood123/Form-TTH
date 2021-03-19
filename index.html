@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>The Code Review</h1>
+      <div class="header__text">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+      <hr>
+    </header>
+
+    <main>
+      <form>
+        <!-- Contact Info -->
+        <fieldset>
+          <legend><h2>Contact Information</h2></legend>
+          <!-- Name -->
+          <label for="name">Full Name</label>
+          <input type="text" id='name' name='user-name' required>
+          <!-- Email -->
+          <label for="email">Email Address</label>
+          <input type="email" id='email' name='user-email' required>
+          <!-- Phone Number -->
+          <label for="number">Phone Number</label>
+          <input type="tel" id='number' name='user-number'>
+          <!-- Street Address -->
+          <label for="address">Address</label>
+          <input type="text" id='address' name='user-address'>
+          <!-- City -->
+          <label for="city">City</label>
+          <input type="text" id='city' name='user-city'>
+          <!-- State -->
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <option value="" disabled selected hidden>Choose State</option>
+            <option value="CA">CA</option>
+            <option value="AL">AL</option>
+          </select>
+          
+          <!-- Zipcode -->
+          <label for="zip">Zip Code</label>
+          <input type="text" id='zip' name='user-zip'>
+        </fieldset>
+
+        <!-- Newletter -->
+        <fieldset>
+          <legend>Newsletter</legend>
+            <p class="newsletter__text">Select the newsletters you would like to receive</p>
+            <label><input type="checkbox"/>HTML News</label>
+            <label><input type="checkbox" />CSS News</label>
+            <label><input type="checkbox" />Javascript News</label>
+          <p>Newsletter format</p>
+          <label><input type="radio" name='format'/>HTML</label>
+          <label><input type="radio" name='format'/>Plain text</label>
+          <p>Other topics you'd like to hear about</p>
+          <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+          <button>Sign Up</button>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
