@@ -13,10 +13,9 @@
   <title>Form</title>
 </head>
 <body>
+  <div class="container">
     <header>
       <h1>The Code Review</h1>
-      <!-- body container -->
-      <div class="container">
         <div class="header__text">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -29,13 +28,14 @@
       <form>
         <!-- Contact Info -->
         <fieldset>
-          <legend><h2>Contact Information</h2></legend>
+          <legend>
+            <h2>Contact Information</h2></legend>
           <!-- Name -->
           <label for="name">Full Name</label>
-          <input type="text" id='name' name='user-name' required>
+          <input type="text" id='name' name='user-name' placeholder="Required">
           <!-- Email -->
           <label for="email">Email Address</label>
-          <input type="email" id='email' name='user-email' required>
+          <input type="email" id='email' name='user-email' placeholder="Required">
           <!-- Phone Number -->
           <label for="number">Phone Number</label>
           <input type="tel" id='number' name='user-number'>
@@ -60,7 +60,9 @@
 
         <!-- Newletter -->
         <fieldset>
-          <legend>Newsletter</legend>
+          <legend>
+            <h2>Newsletter</h2>
+          </legend>
             <p class="newsletter__text">Select the newsletters you would like to receive</p>
             <label><input type="checkbox"/>HTML News</label>
             <label><input type="checkbox" />CSS News</label>

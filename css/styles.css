@@ -6,9 +6,11 @@
 }
 
 :root {
-  --clr-blue: rgb(42, 58, 80);
+  --clr-dark-blue: rgb(42, 58, 80);
+  --clr-blue: rgb(18, 72, 116);
   --clr-white: #fff;
   --clr-light-gray: rgb(192, 192, 192);
+  --clr-light-input: rgb(240, 239, 239);
   --font-playfair: "Playfair Display", serif;
   --font-newsreader: "Newsreader", serif;
 }
@@ -20,7 +22,7 @@
 
 /* Header ------------------ */
 header h1 {
-  background-color: var(--clr-blue);
+  background-color: var(--clr-dark-blue);
   color: var(--clr-white);
   text-transform: uppercase;
   font-size: 18px;
@@ -45,6 +47,7 @@ header h1 {
 .header__text p {
   color: var(--clr-light-gray);
   font-weight: 200px;
+  font-size: 17px;
   font-family: var(--font-newsreader);
   width: 90%;
   margin-bottom: 30px;
@@ -59,3 +62,49 @@ header h1 {
   border: 1px solid black;
 }
 /* End Header ------------------ */
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+legend h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label[for] {
+  font-size: 16px;
+  color: var(--clr-dark-blue);
+  font-weight: 200;
+  font-family: var(--font-newsreader);
+  margin-bottom: 8px;
+  margin-top: 6px;
+}
+
+input[type] {
+  margin-bottom: 12px;
+  background-color: var(--clr-light-input);
+  border: none;
+  height: 50px;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline-color: var(--clr-blue);
+}
+
+fieldset > label {
+  color: pink;
+}
+
+input::placeholder {
+  color: var(--clr-light-gray);
+  font-family: var(--font-newsreader);
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
+  color: gray;
+}
