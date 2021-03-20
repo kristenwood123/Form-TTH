@@ -56,6 +56,7 @@
           <!-- Zipcode -->
           <label for="zip">Zip Code</label>
           <input type="text" id='zip' name='user-zip'>
+          <hr class="hr-two">
         </fieldset>
 
         <!-- Newletter -->
@@ -63,16 +64,27 @@
           <legend>
             <h2>Newsletter</h2>
           </legend>
+          <div class="newsletter__container">
             <p class="newsletter__text">Select the newsletters you would like to receive</p>
-            <label><input type="checkbox"/>HTML News</label>
-            <label><input type="checkbox" />CSS News</label>
-            <label><input type="checkbox" />Javascript News</label>
-          <p>Newsletter format</p>
-          <label><input type="radio" name='format'/>HTML</label>
-          <label><input type="radio" name='format'/>Plain text</label>
-          <p>Other topics you'd like to hear about</p>
-          <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
-          <button>Sign Up</button>
+            <input type="checkbox"/>
+            <label for="news">HTML News</label>
+
+            <input type="checkbox"/>
+            <label for="news">CSS News</label>
+
+            <input type="checkbox" />
+            <label for="news">Javascript News</label>
+
+            <p>Newsletter format</p>
+            <input type="radio" name='format'/>
+            <label for="format">HTML</label>
+
+            <input type="radio" name='format'/>
+            <label for="format">Plain text</label>
+            <p>Other topics you'd like to hear about</p>
+            <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+            <button>Sign Up</button>
+          </div>
         </fieldset>
       </form>
     </main>

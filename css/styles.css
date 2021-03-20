@@ -16,7 +16,7 @@
 }
 
 .container {
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -75,7 +75,8 @@ legend h2 {
   margin-bottom: 20px;
 }
 
-label[for] {
+label[for],
+label[for="state"] {
   font-size: 16px;
   color: var(--clr-dark-blue);
   font-weight: 200;
@@ -84,20 +85,21 @@ label[for] {
   margin-top: 6px;
 }
 
-input[type] {
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select[name="state"] {
   margin-bottom: 12px;
   background-color: var(--clr-light-input);
   border: none;
   height: 50px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline-color: var(--clr-blue);
-}
-
-fieldset > label {
-  color: pink;
 }
 
 input::placeholder {
@@ -107,4 +109,36 @@ input::placeholder {
   font-style: italic;
   font-size: 14px;
   color: gray;
+}
+
+input[type]:nth-of-type(6) {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+/* Newsletter ---------------- */
+.newsletter__text,
+label[for="format"],
+p {
+  font-weight: 200;
+  color: var(--clr-dark-blue);
+  font-size: 17px;
+  font-family: var(--font-newsreader);
+  margin-bottom: 20px;
+}
+
+fieldset > label {
+  color: var(--clr-dark-blue);
+  font-weight: 200;
+  font-family: var(--font-newsreader);
+}
+
+.newsletter__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+input[type="checkbox"] {
+  display: block;
 }
