@@ -19,6 +19,7 @@
 .container {
   width: 92%;
   margin: 0 auto;
+  max-width: 500px;
 }
 
 /* Header ------------------ */
@@ -82,8 +83,9 @@ label[for="state"] {
   color: var(--clr-dark-blue);
   font-weight: 200;
   font-family: var(--font-newsreader);
-  margin-bottom: 8px;
   margin-top: 6px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 input[type="text"],
@@ -96,15 +98,15 @@ select[name="state"] {
   height: 50px;
   border-radius: 2px;
   cursor: pointer;
+  display: block;
+  width: 100%;
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus,
+button:focus {
   outline-color: var(--clr-blue);
-}
-
-select:nth-child(1) {
-  color: pink;
 }
 
 input::placeholder {
@@ -118,7 +120,7 @@ input::placeholder {
   padding-right: 15px;
 }
 
-input[type]:nth-of-type(6) {
+#zip {
   width: 50%;
   margin-bottom: 30px;
 }
@@ -192,4 +194,41 @@ footer {
   color: var(--clr-light-gray);
   text-align: center;
   font-style: italic;
+}
+
+/* Media query----------------- */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  label[for="name"],
+  label[for="email"],
+  label[for="number"],
+  label[for="address"],
+  label[for="city"],
+  label[for="state"],
+  label[for="zip"] {
+    width: 25%;
+    display: inline-block;
+  }
+
+  span {
+    display: block;
+    overflow: hidden;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select[name="state"] {
+    max-width: 74%;
+    display: inline-block;
+  }
+
+  #zip {
+    width: 150px;
+    color: green;
+    margin-bottom: 40px;
+  }
 }
