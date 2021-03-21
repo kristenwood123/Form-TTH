@@ -35,27 +35,27 @@
           <!-- Name -->
           <div>
           <label for="name">Full Name</label>
-          <input type="text" id='name' name='user-name' placeholder="Required">
+          <input type="text" id='name' name='user-name' placeholder="Required" required>
           </div>
           <!-- Email -->
           <div>
           <label for="email">Email Address</label>
-          <input type="email" id='email' name='user-email' placeholder="Required">
+          <input type="email" id='email' name='user-email' placeholder="Required" required>
           </div>
           <!-- Phone Number -->
           <div>
           <label for="number">Phone Number</label>
-          <input type="tel" id='number' name='user-number' placeholder="Required">
+          <input type="tel" id='number' name='user-number' placeholder="Required" required>
           </div>
           <!-- Street Address -->
           <div>
           <label for="address">Street Address</label>
-          <input type="text" id='address' name='user-address'>
+          <input type="text" id='address' name='user-address' required>
           </div>
           <!-- City -->
           <div>
           <label for="city">City</label>
-          <input type="text" id='city' name='user-city'>
+          <input type="text" id='city' name='user-city' required>
           </div>
           <!-- State -->
           <div>
@@ -130,29 +130,25 @@
           </legend>
           <div class="newsletter__container">
             <p class="newsletter__text">Select the newsletters you would like to receive</p>
-
             <div>
-              <input type="checkbox" id='news' name='news' value='user_news'/>
-              <label for="news" class='news'>HTML News</label><br>
+              <input type="checkbox" id='news_html' name='news' value='user_news' required/>
+              <label for="news_html" class='news'>HTML News</label><br>
             </div>
-
             <div>
-              <input type="checkbox" id='news'cname='news' value='user_news'/>
-              <label for="news">CSS News</label>
-            </div>
-            
+              <input type="checkbox" id='news_css' name='news' value='user_news' required/>
+              <label for="news_css">CSS News</label>
+            </div>          
             <div>
-            <input type="checkbox" id='news' name='news' value='user_news'/>
-            <label for="news">Javascript News</label>
+            <input type="checkbox" id='news_js' name='news' value='user_news' required/>
+            <label for="news_js">Javascript News</label>
             </div>
-
             <p class="newsletter__text1">Newsletter format</p>
             <div>
-              <input type="radio" id='format' name='format' value='user_format'/>
-              <label for="format">HTML</label>
+              <input type="radio" id='format_html' name='format' value='user_format' required/>
+              <label for="format_html">HTML</label>
               </div>
               <div>
-                <input type="radio" id='format' name='format' value='user_format'/>
+                <input type="radio" id='format' name='format' value='user_format' required/>
                 <label for="format">Plain text</label>
               </div>
             <p class='other'>Other topics you'd like to hear about</p>
