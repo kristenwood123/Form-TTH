@@ -39,7 +39,6 @@ header h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgb(16, 138, 138);
 }
 
 .header__text h2 {
@@ -101,6 +100,7 @@ select[name="state"] {
   cursor: pointer;
   display: block;
   width: 100%;
+  padding-left: 10px;
 }
 
 select:invalid {
@@ -112,7 +112,7 @@ select:focus,
 textarea:focus,
 button:focus {
   outline-color: var(--clr-blue);
-  background: rgb(226, 166, 2);
+  background: rgb(217, 243, 230);
   transition-property: background;
   transition-duration: 0.5s;
   transition-timing-function: linear;
